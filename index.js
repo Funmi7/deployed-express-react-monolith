@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/client/build/index.html')
 });
 
-app.get('/api/friends', (req, res, next) => {
+app.get('/api/friends', (req, res) => {
   res.json(friends);
 });
 
