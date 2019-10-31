@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/client/bild/index.html')
+    res.sendFile(__dirname + '/client/build/index.html')
 });
 
 app.get('/api/friends', (req, res, next) => {
